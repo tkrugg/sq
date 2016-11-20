@@ -17,4 +17,10 @@ const Event = ({time, action, user}) => {
   );
 };
 
+Event.propTypes = {
+  action: React.PropTypes.string,
+  user: React.PropTypes.object,
+  time: React.PropTypes.string
+};
+
 export default Event;

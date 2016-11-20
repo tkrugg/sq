@@ -2,6 +2,8 @@ import {SHOW_EVENTS, LOAD_EVENTS} from '../constants/actionTypes';
 import reducer from "./eventsReducer";
 import moment from "moment";
 import {expect} from 'chai';
+import it from "moment/src/locale/it";
+import {describe} from "mocha";
 
 describe("Reducer::Events", () => {
   const getInitialState = () => ({

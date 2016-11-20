@@ -22,7 +22,7 @@ export function load(url, startDate, endDate) {
           startDate, endDate,
           data,
         });
-      }).catch(err => {
+      }).catch(() => {
         return dispatch({
           type: types.LOADING_FAILED,
           datemodified: dateHelper.getFormattedDateTime()
